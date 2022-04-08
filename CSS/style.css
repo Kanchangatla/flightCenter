@@ -1,7 +1,21 @@
-body {
-    font-size: 18px;
-    background: url(no-dimensions-1x1-ratio.svg);
-    
+*{
+    margin: 0;
+    padding: 0;
 }
+#banner{
+    background: linear-gradient(rgba(0,0,0,0.5),#009688), url(../Images/pexels-photo-1631677.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo {
+width: 140px;
+position: absolute;
+top: 4%;
+left: 10%;
+border-radius: 70px ;
+
+}
+
 
   
