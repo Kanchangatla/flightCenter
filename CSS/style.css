@@ -17,7 +17,7 @@ html{
 
     }
     body {
-      background:black;
+      background-image: url(../Images/background-image.jpeg);
       overflow-x: hidden;  
     }
     .btn{
