@@ -17,7 +17,7 @@ html{
 
     }
     body {
-      background-image: url(../Images/background-image.jpeg);
+      background-image: linear-gradient(rgba(0,0,0,0.5),#009688), url(../Images/pexels-photo-1631677.webp);
       overflow-x: hidden;  
     }
     .btn{
@@ -28,18 +28,19 @@ html{
         border-radius: 5rem;
         cursor: pointer;
         background: none;
+        color:black;
     
     }
     :hover .btn{
         background:black;
-        color:blue;
+        color:white;
     }
     
     .header{
         position:fixed;
         top:0; left:0; right:0;
         z-index: 1000;
-        background:rgb(101, 110, 231);
+        background:rgb(10, 19, 151);
         display: flex;
         align-items: center;
         justify-content:space-between;
@@ -93,7 +94,7 @@ html{
     background-image: url(../Images/pexels-adi-perets-4125993.jpg);
 }
 .slide2{
-    background-image: url(../Images/pexels-rebeca-gonçalves-1770310.jpg);
+    background-image: url(../Images/pexels-te-lensfix-1371360.jpg);
 }
 .slide3{
     background-image: url(../Images/pexels-pixabay-413960.jpg);
@@ -147,7 +148,7 @@ h2{
     font-family: 'Raleway', sans-serif;
     padding: 20px 0 20px 0;
     }
-    div.main{
+    .form-group{
     width: 400px;
     padding: 10px 50px 25px;
     border: 2px solid gray;
