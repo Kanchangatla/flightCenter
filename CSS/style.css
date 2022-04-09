@@ -1,53 +1,165 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 *{
-    font-family: 'Nunito', sans-serif;
-    
-  }
-  body {
-    font-size: 18px;
-    background: linear-gradient(rgba(0,0,0,0.5),#009688), url(../Images/pexels-photo-1631677.webp);
-    margin: 30px 50px;
-    line-height: 1.4;
-    
-}
-html{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    color:bisque;
-} 
-.wrapper { 
-    background:#333;
-    display: grid;
-    grid-gap: 20px;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
 }
-.logo {
-    color:azure;
-    display: grid;
-    grid-gap: 20px;
-    padding: 0;
-    list-style: none;
-    text-decoration-line: none;
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+
+    }
+    body {
+      background:black;
+      overflow-x: hidden;  
+    }
+    .btn{
+       margin-top: 1rem;
+       display:inline-block;
+        padding: 1rem 3rem;
+        font-size: 1.8rem;
+        border-radius: 5rem;
+        cursor: pointer;
+        background: none;
     
+    }
+    :hover .btn{
+        background:black;
+        color:blue;
+    }
+    
+    .header{
+        position:fixed;
+        top:0; left:0; right:0;
+        z-index: 1000;
+        background:rgb(101, 110, 231);
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        padding:1.5rem 9%;
+
+    }
+    
+    .navbar a{
+        font-size: 1.7rem;
+        display:inline-block;
+        color:black;
+        margin:0 1rem;
+        text-decoration: solid;
+    
+    }
+    :hover i{
+        color:black;
+    }
+    :hover a{
+        color:wheat;
+    }
+
+.logo{
+   font-size: 2.5rem;
+   color:black;
+   font-weight: bolder;
+   text-transform: capitalize;
 }
-#navbar ul{
-    display: grid;
-    grid-gap: 20px;
-    padding: 0;
-    list-style: none;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    i{
+        color:aqua;
+        padding-right: .5rem;
+    }
+    .wrap, .slide-content{
+        margin:0;
+        padding:0;
+        font-family:Arial, Helvetica, sans-serif;
+        width:100%;
+        height:100vh;
+        overflow-x:hidden;
+    }
+.wrap{
+    position: relative;
 
 }
-#navbar a {
-    display:block;
-    text-decoration: none;
-    padding:0.8rem;
-    text-align: center;
-    color:azure;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    
+.slide{
+   background-size: cover; 
+   background-position: center;
+   background-repeat: no-repeat;
 }
+.slide1{
+    background-image: url(../Images/pexels-adi-perets-4125993.jpg);
+}
+.slide2{
+    background-image: url(../Images/pexels-nataliya-vaitkevich-4945061.jpg);
+}
+.slide3{
+    background-image: url(../Images/pexels-element-digital-1051075.jpg);
+}
+.slide-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.slide-content span{
+    font-size:5rem;
+    color:blue;
+}
+.arrow{
+    cursor: pointer;
+    position:absolute;
+    top: 50%;
+    margin-top: -50px;
+    width:0;
+    height:0;
+    border-style: solid;
+}
+#arrow-left{
+    border-width: 30px 40px 30px 0;
+    border-color: transparent rgb(129, 226, 226) transparent transparent;
+    left:0;
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
 
