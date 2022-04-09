@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
-  <link rel="stylesheet" href="../flightCenter/CSS/style.css">
-    <meta charset="UTF-8">
+   <!---font awesome cdn link-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">  
+  <!--css file link-->
+<link rel="stylesheet" href="../flightCenter/CSS/style.css">
+  <!--custom js file link--->
+  
+  <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flight Center</title>
 </head>
 <body>
-  <header>
-    <a href="" class="logo"> Travel</a>
-    <nav class="navbar">
-     <a href="#">Home</a>
-     <a href="#">Book</a>
-     <a href="#">Packages</a>
-     <a href="#">Gallery</a>
-     <a href="#">Contact Us</a>
-     </nav>
+  <div class="wrapper">
+    <!--Navigation --> 
+<a href="#" class="logo"> Travel</a>
+    <ul id="navbar">
+     <li><a href="#">Home</a></li>
+     <li><a href="#">Book</a></li>
+     <li><a href="#">Packages</a></li>
+     <li><a href="#">Gallery</a></li>
+     <li><a href="#">Contact Us</a></li>
+     </ul>
      
-        </header>
-    <!--Header section ends-->
+    <!--Navigation section ends-->
     
-    <!-- home section starts  -->
+    <!-- image section starts  -->
+<div class="wrap">
+   <div id="arrow-left" class="arrow"></div>
+   <div id="slider">
+    <div class="slide slide1">
+      <div class="slide-content">
+        <span>Image one</span>
+       </div>
+    </div>
+    <div class="slide slide2">
+      <div class="slide-content">
+        <span>Image two</span>
+       </div>
+    </div>
+    <div class="slide slide3">
+      <div class="slide-content">
+        <span>Image three</span>
+       </div>
+    </div>
+    <div class="slide slide4">
+      <div class="slide-content">
+        <span>Image four</span>
+       </div>
+    </div>
 
-<section class="home" id="home">
+   </div>
+   <div id="arrow-right" class="arrow"></div>
 
-  <div class="content">
-      <h3>adventure is worthwhile</h3>
-      <p>dicover new places with us, adventure awaits</p>
-      <a href="#" class="btn">discover more</a>
+</div>
+<!-- image section ends -->
   </div>
-
-  <div class="controls">
-      <span class="vid-btn active" data-src="../images/vid-1"></span>
-      <span class="vid-btn" data-src="../images/vid-2.mp4"></span>
-      <span class="vid-btn" data-src="../images/vid-3.mp4"></span>
-      <span class="vid-btn" data-src="../images/vid-4.mp4"></span>
-      <span class="vid-btn" data-src="../images/vid-5.mp4"></span>
-  </div>
-
-  <div class="video-container">
-      <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
-  </div>
-
-</section>
-
-<!-- home section ends -->
+  <!--wrapper ends-->
 </body>
 </html>

@@ -1,57 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
 
 *{
     font-family: 'Nunito', sans-serif;
-    margin:0; padding:0;
-    box-sizing: border-box;
-    text-transform: capitalize;
-    outline: none; border:none;
-    text-decoration: none;
-    transition: all .2s linear;
+    
   }
-body{
+  body {
+    font-size: 18px;
     background: linear-gradient(rgba(0,0,0,0.5),#009688), url(../Images/pexels-photo-1631677.webp);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    border-radius: 10px;
+    margin: 30px 50px;
+    line-height: 1.4;
+    
 }
-
-  html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top: 6rem;
-    scroll-behavior: smooth;
-  }
-  header{
-    position: fixed;
-    top:0; left: 0; right:0;
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color:bisque;
+} 
+.wrapper { 
     background:#333;
-    z-index: 1000;
-    display: flex;
-    align-items: left;
-    justify-content: space-between;
-    padding:2rem 9%;
-  }
-  header .logo{
-    font-size: 2.5rem;
-    font-weight: bolder;
-    color:#fff;
+    display: grid;
+    grid-gap: 20px;
+}
+.logo {
+    color:azure;
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    text-decoration-line: none;
+    
+}
+#navbar ul{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+#navbar a {
+    display:block;
+    text-decoration: none;
+    padding:0.8rem;
+    text-align: center;
+    color:azure;
     text-transform: uppercase;
-    align-items: center;
-  }
-  header .navbar a{
-    color:#fff;
-    font-size: 2rem;
-    margin: 0 .9rem;
-  }
-  header .icons i{
-    font-size: 2.5rem;
-    color:#fff;
-    cursor: pointer;
-    margin-right: 2rem;
-  }
-  
+    font-size: 1.1rem;
+    
+}
   
 
 
