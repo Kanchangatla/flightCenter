@@ -69,14 +69,20 @@ return false;
 }
 }
 // Get data
-const success = document.querySelector("#success");
-const errorNodes = document.querySelector(".error");
+
 
 //validate data
-function validateForm(){
-    
+function checkFormIsValid(form){
+    displayErr= "";
+    if ( ( form.flighttype[0].checked == false ) && ( form.flighttype[1].checked == false ) ) 
+    {
+        alert ( "Please select your Flighttype: Oneway or Roundtrip" ); 
+        return false;
+    }
+    if (displayErr= "") { form.submit() } else {
+        alert("Congratulations your booking is done and you will soon receive your booking details in your specified email!");
+    }
+    } 
 
-
-}
 
 

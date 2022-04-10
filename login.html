@@ -71,9 +71,8 @@
        <section>
 <fieldset>
     <legend>Booking Details</legend>
-    
-      <h3 id="flightype">Flight Type :</h3>
-<form onsubmit="event.preventDefault(); validateForm();"><!---form starts-->
+    <form name="comment" action="#" method=post><!---form starts-->
+  <h3 id="flightype">Flight Type :</h3>
   <input  class="flighttype" type ="radio" id="oneWay" name="flighttype" value="One Way"><span></span>
     <label for="oneWay" id="labeloneway">One Way</label>
     <small class="error"></small>
@@ -148,8 +147,8 @@
    <option value="Bank-Transfer">Bank-transfer</option>
    <option value="creditcard">Credit-Card</option></select> <br><br><br></small>
    
-   <input type="submit" id="submitBtn" onclick=" " value="SUBMIT FORM">
-   <p id="success">"Congratulations your booking is done and you will soon receive your booking details in your specified email!"></p>   
+   <input type="submit" id="submitBtn" onclick="checkFormIsValid(this.form) " value="SUBMIT FORM">
+      
 
 </form><!---form ends-->
  
