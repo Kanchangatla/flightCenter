@@ -68,6 +68,15 @@ return false;
 }
 }
 }
+// Get data
+const success = document.querySelector("#success");
+const errorNodes = document.querySelector(".error");
 
+//validate data
+function validateForm(){
+    
+
+
+}
 
 

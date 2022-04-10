@@ -159,6 +159,8 @@ input[type="email"], input[type="text"]{
  input[type="age"], input[id="age"]{
     width: 35px;
 }
+
+
  
 /* submit button */
 input[type="submit"]{
@@ -167,7 +169,12 @@ input[type="submit"]{
     background-color:black;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: .8em;
+    font-size: 10px;
+    max-width: 100px;
+    width:50%;
+    margin-top: 30px;
+    border-radius: 3px;
+   
 }
 #flightype, .flighttype{
     white-space:nowrap;
@@ -184,8 +191,7 @@ input[type="submit"]{
     box-shadow: 5px 10px #bebfb7 ;
     padding: 20px;
     
-   
-}
+   }
 #destination {
     white-space: nowrap;
     
@@ -209,6 +215,12 @@ h4{
 }
 #foodchoice{
     font-size: 15px;
+}
+.error{
+    color: darkred;
+}
+#success{
+    color:black;
 }
 
 
