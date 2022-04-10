@@ -134,18 +134,18 @@ html{
     margin-right: 30px;
 }
 fieldset{
-    margin: 2em 0;
-    padding: 1em 2em;
+    margin: 7em 0;
+    padding: 2em 2em;
     border: solid 1px rgb(7, 7, 7);
     border-radius: 8px;
-    min-width: 200px;
-    text-align: center;
+   text-align: center;
+   background-color: rgba(72, 89, 90, 0.541);
 
 }
 legend{
     font-size: 35px;
     padding: 0 .25em;
-    color:rgb(63, 63, 117);
+    color:rgb(12, 12, 54);
 }
 
 /* input and text area */
