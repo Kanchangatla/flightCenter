@@ -69,59 +69,72 @@
     <!---header section ends-->
     
     <!--Book now form-->
-    <!--Radio buttons with One way or Return-->
-    <div class="container">
-       <div id="form">
-    <h1 class="text-white">Booking Details</h1>
+       <section>
+<form action="#" method="post"><!---form starts-->
+  <fieldset>
+    <legend>Booking Details</legend>
+    <div class="checks">
+      <H3 id="flightype">Flight Type :</H3>
     
-    <H3 id="flightype">Flight Type :</H3><label for="oneWay" id="labeloneway">One Way</label><input  class="flighttype" type ="radio" id="oneWay" name="flighttype" value="One Way"><span></span>
-           <label for="roundTrip">Round Trip</label><input class="flighttype" type="radio" id="roundTrip" name="flighttype" value="Round Trip">
+    <input  class="flighttype" type ="radio" id="oneWay" name="flighttype" value="One Way"><span></span>
+    <label for="oneWay" id="labeloneway">One Way</label>
+      <input class="flighttype" type="radio" id="roundTrip" name="flighttype" value="Round Trip">
+  <label for="roundTrip">Round Trip</label>
          <br /><br>
-           <span class="headfordestination">Destination :</span>
-           <label for="flyfrom" id="flyfrom">From </label><input type="text" id="flyfrom" name="flyfrom">
-           <label for="flyto" id="flyto">To</label><input type="text" id="flyto" name="flyto">
+        </div>
+        <span class="headfordestination">Destination :</span>
+           <label for="flyfrom" id="flyfrom">From :</label><input type="text" id="flyfrom" name="flyfrom">
+           <label for="flyto" id="flyto">To :</label><input type="text" id="flyto" name="flyto">
            <br><br>
            <span >Date Of Travel:</span>
            <label for="depart" id="depart">Departure</label> <input  type ="text" id="depart" name="depart" >
            <label for="return" id="return">Return</label> <input type="text" id="return" name="return" >
            <br><br>
+           
            <h3>Passenger Details:</h3>
+           <div class="checks">
            <h4>Passenger-1</h4>
            <label for ="name">Name</label> <input  type ="text" id="pName" name="pName" ><br><br>
            <label for="gender">Gender</label>
            <label for="Gender" id="gm"> Male</label><input  type="radio" id="male" name="gender" value="male">
-           <label for="Gende">Female</label><input  type="radio" id="female" name="gender" value="female">
+           <label for="Gender">Female</label><input  type="radio" id="female" name="gender" value="female">
            <label for="age" id="agelabel" >Age</label> <input  type ="text" id="age" name="age" >
            <h4>Passenger-2</h4>
            <label for ="name">Name</label> <input  type ="text" id="pName" name="pName" ><br><br>
            <label for="gender">Gender</label>
            <label for="Gender" id="gm"> Male</label><input  type="radio" id="male" name="gender" value="male">
-           <label for="Gende">Female</label><input  type="radio" id="female" name="gender" value="female">
+           <label for="Gender">Female</label><input  type="radio" id="female" name="gender" value="female">
            <label for="age" id="agelabel" >Age</label> <input  type ="text" id="age" name="age" >
            <h4>Passenger-3</h4>
            <label for ="name">Name</label> <input  type ="text" id="pName" name="pName" ><br><br>
            <label for="gender">Gender</label>
            <label for="Gender" id="gm"> Male</label><input  type="radio" id="male" name="gender" value="male">
-           <label for="Gende">Female</label><input  type="radio" id="female" name="gender" value="female">
+           <label for="Gender">Female</label><input  type="radio" id="female" name="gender" value="female">
            <label for="age" id="agelabel" >Age</label> <input  type ="text" id="age" name="age" ><br><br>
-            <h4>Food Options (We cater your preference of food type)</h4>
-           <span id="foodchoice">Please Select your food options</span>
-          <select id="foodtype" name="foodtype">
-    <option value="vegetarian">Vegetarian</option>
-    <option value="vegan">Vegan</option>
-    <option value="nonveg">Non-veg</option>
-   
-  </select>
-  <h4>Contact Details & Payment</h4>
-  <label for ="email">E-mail</label> <input  type ="text" id="email" name="email" >
-  <label for ="address">Address</label> <input  type ="text" id="address" name="address" ><br><br>
-  <span>Select Payment Method:</span>
-  <select id="payment" name="payment">
-    <option value="Bank-Transfer">Bank-transfer</option>
-    <option value="creditcard">Credit-Card</option></select> <br><br><br>
-    <input type="submit" id="submitBtn" onclick=" " value="SUBMIT FORM">
-   
-</div><!--form-->
-</div><!--container-->
-</body>
+           </div>
+           <h4>Food Options (We cater your preference of food type)</h4>
+          <span id="foodchoice">Please Select your food options</span>
+         <select id="foodtype" name="foodtype">
+   <option value="vegetarian">Vegetarian</option>
+   <option value="vegan">Vegan</option>
+   <option value="nonveg">Non-veg</option>
+  
+ </select>
+ <h4>Contact Details & Payment</h4>
+ <label for ="email">E-mail</label> <input  type ="text" id="email" name="email" >
+ <label for ="address">Address</label> <input  type ="text" id="address" name="address" ><br><br>
+ <span>Select Payment Method: </span>
+ <select id="payment" name="payment">
+   <option value="Bank-Transfer">Bank-transfer</option>
+   <option value="creditcard">Credit-Card</option></select> <br><br><br>
+   <input type="submit" id="submitBtn" onclick=" " value="SUBMIT FORM">   
+
+
+ </fieldset>
+
+</form><!---form ends-->
+
+</section>
+
+    </body>
 </html>

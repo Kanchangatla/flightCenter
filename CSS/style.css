@@ -133,11 +133,83 @@ html{
     right:0;
     margin-right: 30px;
 }
-.container{
+fieldset{
+    margin: 2em 0;
+    padding: 1em 2em;
+    border: solid 1px rgb(7, 7, 7);
+    border-radius: 8px;
+    min-width: 200px;
     text-align: center;
-    padding: 50px 0 50px 0;
+
+}
+legend{
+    font-size: 35px;
+    padding: 0 .25em;
+    color:rgb(63, 63, 117);
 }
 
+/* input and text area */
+
+input{
+    border: solid 1px rgb(146, 64, 64);
+}
+input[type="email"], input[type="text"]{
+     width: 20em;
+ }
+ input[type="age"], input[id="age"]{
+    width: 35px;
+}
+ 
+/* submit button */
+input[type="submit"]{
+    padding: .5em 1em;
+    border-radius:6px;
+    background-color:black;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8em;
+}
+#flightype, .flighttype{
+    white-space:nowrap;
+    display:inline
+}
+#labeloneway{
+    margin-left:0;
+}
+#ticketForm{
+    box-sizing: border-box;
+    background-color:#F2E9E7 ;
+    border-radius: 2px;
+    border: 2px solid #85867a;
+    box-shadow: 5px 10px #bebfb7 ;
+    padding: 20px;
+    
+   
+}
+#destination {
+    white-space: nowrap;
+    
+}
+ #flyfrom, #flyto{
+     display: inline;
+ }
+ .gender{
+    margin-left:40px;
+ }
+#gm,#agelabel{
+    margin-left:40px;
+}
+h3{
+    text-decoration: solid;
+    font-size:large;
+}
+h4{
+    text-decoration: solid;
+    font-size:large;
+}
+#foodchoice{
+    font-size: 15px;
+}
 
 
 
