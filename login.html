@@ -35,64 +35,93 @@
 <!--Radio buttons with One way or Return-->
 <div class="container">
    <form class="form-group">
-     <h1 class="text-center">Airline Booking Form</h1>
-     <div id="form">
-<h3 class="text-white">Booking Details</h3>
-
-<div id="input">    <!--input-->
-  <input type="text" id="input-group" placeholder="from">
-  <input type="text" id="input-group" placeholder="To">
-  <input type="text" id="input-group" placeholder="Departure Date">
-  <input type="text" id="input-group" placeholder="Departure Time">
-  <select id="input-group" style="background:black;">
-    <option value="">Preffered Airline</option>
-    <option value="">IndoGo</option>
-    <option value="">AirIndia</option>
-    <option value="">SpaceJet</option>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+       <!---font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">  
+      <!--css file link-->
+    <link rel="stylesheet" href="../flightCenter/CSS/style.css">
+      <!--custom js file link--->
+      <script src="../flightCenter/JS/script.js" defer></script>
+      <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flight Center</title>
+    </head>
+    <body>
+      <!---header section starts-->
+      
+     <header class="header">
+    <a href="#" class="logo"><i class="fas fa-paper-plane"></i>Travel</a>
+    <nav class="navbar">
+    <a href="../flightCenter/index.html">Home</a>
+    <a href="#">about</a>
+    <a href="#">Destination</a>
+    <a href="#">services</a>
+    <a href="#">gallery</a>
+    <a href="#">Contact Us</a>
+    </nav>
+    <a href="../flightCenter/login.html" class="btn">Book now</a>
+    
+    </header>
+    
+    <!---header section ends-->
+    
+    <!--Book now form-->
+    <!--Radio buttons with One way or Return-->
+    <div class="container">
+       <div id="form">
+    <h1 class="text-white">Booking Details</h1>
+    
+    <H3 id="flightype">Flight Type :</H3><label for="oneWay" id="labeloneway">One Way</label><input  class="flighttype" type ="radio" id="oneWay" name="flighttype" value="One Way"><span></span>
+           <label for="roundTrip">Round Trip</label><input class="flighttype" type="radio" id="roundTrip" name="flighttype" value="Round Trip">
+         <br /><br>
+           <span class="headfordestination">Destination :</span>
+           <label for="flyfrom" id="flyfrom">From </label><input type="text" id="flyfrom" name="flyfrom">
+           <label for="flyto" id="flyto">To</label><input type="text" id="flyto" name="flyto">
+           <br><br>
+           <span >Date Of Travel:</span>
+           <label for="depart" id="depart">Departure</label> <input  type ="text" id="depart" name="depart" >
+           <label for="return" id="return">Return</label> <input type="text" id="return" name="return" >
+           <br><br>
+           <h3>Passenger Details:</h3>
+           <h4>Passenger-1</h4>
+           <label for ="name">Name</label> <input  type ="text" id="pName" name="pName" ><br><br>
+           <label for="gender">Gender</label>
+           <label for="Gender" id="gm"> Male</label><input  type="radio" id="male" name="gender" value="male">
+           <label for="Gende">Female</label><input  type="radio" id="female" name="gender" value="female">
+           <label for="age" id="agelabel" >Age</label> <input  type ="text" id="age" name="age" >
+           <h4>Passenger-2</h4>
+           <label for ="name">Name</label> <input  type ="text" id="pName" name="pName" ><br><br>
+           <label for="gender">Gender</label>
+           <label for="Gender" id="gm"> Male</label><input  type="radio" id="male" name="gender" value="male">
+           <label for="Gende">Female</label><input  type="radio" id="female" name="gender" value="female">
+           <label for="age" id="agelabel" >Age</label> <input  type ="text" id="age" name="age" >
+           <h4>Passenger-3</h4>
+           <label for ="name">Name</label> <input  type ="text" id="pName" name="pName" ><br><br>
+           <label for="gender">Gender</label>
+           <label for="Gender" id="gm"> Male</label><input  type="radio" id="male" name="gender" value="male">
+           <label for="Gende">Female</label><input  type="radio" id="female" name="gender" value="female">
+           <label for="age" id="agelabel" >Age</label> <input  type ="text" id="age" name="age" ><br><br>
+            <h4>Food Options (We cater your preference of food type)</h4>
+           <span id="foodchoice">Please Select your food options</span>
+          <select id="foodtype" name="foodtype">
+    <option value="vegetarian">Vegetarian</option>
+    <option value="vegan">Vegan</option>
+    <option value="nonveg">Non-veg</option>
+   
   </select>
-  <select id="input-group" style="background:black;">
-    <option value="">Preffered Seating</option>
-    <option value="">Economy Class</option>
-    <option value="">Business Class</option>
-    <option value="">First Class</option>
-  </select>
-</div><!--input-->
-<div id="input2"><!---input2-->
-<input type="number" id="input-group" placeholder="Adult">
-<input type="number" id="input-group" placeholder="Children(2-11years)">
-<input type="number" id="input-group" placeholder="Infant(under 2years)">
-</div><!---input2-->
-
-<div id="input3">  <!--input3-->
-<span id="input-group" class="text-primary">Select Your Fare</span>
-<input type="radio" id="input-group" name="r">
-<label for="input-group" style ="color: antiquewhite;">One Way</label>
-<input type="radio" id="input-group" name="r">
-<label  for="input-group" style ="color: antiquewhite;">Return</label>
-</div><!--input3-->
-
-<div id="input4"><!--input 4-->
-<input type="text" id="input-group" placeholder="Return Date">
-<input type="text" id="input-group" placeholder="Return Time">
-<input type="text" id="input-group1" placeholder="Any Message">
-</div><!--input4-->
-
-<div id="input5"><!--input5-->
-<h3 class="text-white">Personal Details</h3>
-</div><!--input5-->
-
-<div id="input6"><!--input6-->
-  <input type="text" id="input-group" placeholder="Full Name">
-  <input type="number" id="input-group" placeholder="Phone Number">
-  <input type="email" id="input-group1" placeholder="Email">
-
-</div><!--input6-->
-<button type="submit" class="btn btn-warning text-white">Submit Form</button>
-<button type="reset" class="btn btn-primary ">Clear</button>
-
+  <h4>Contact Details & Payment</h4>
+  <label for ="email">E-mail</label> <input  type ="text" id="email" name="email" >
+  <label for ="address">Address</label> <input  type ="text" id="address" name="address" ><br><br>
+  <span>Select Payment Method:</span>
+  <select id="payment" name="payment">
+    <option value="Bank-Transfer">Bank-transfer</option>
+    <option value="creditcard">Credit-Card</option></select> <br><br><br>
+    <input type="submit" id="submitBtn" onclick=" " value="SUBMIT FORM">
+   
 </div><!--form-->
-
-  </form>
 </div><!--container-->
 </body>
 </html>
