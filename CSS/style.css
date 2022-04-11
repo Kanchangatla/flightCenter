@@ -135,6 +135,7 @@ html{
 }
 fieldset{
     margin: 7em 0;
+    
     padding: 2em 2em;
     border: solid 1px rgb(7, 7, 7);
     border-radius: 8px;
@@ -148,6 +149,11 @@ legend{
     color:rgb(12, 12, 54);
 }
 
+
+
+
+
+
 /* input and text area */
 
 input{
@@ -159,6 +165,25 @@ input[type="email"], input[type="text"]{
  input[type="age"], input[id="age"]{
     width: 35px;
 }
+input[type="pName"], input[id="pName"],input[type="lName"], input[id="lName"]{
+    margin-bottom: 0.5em;
+}
+input[type="email"], input[id="email"],input[type="address"], input[id="address"]{
+    margin-bottom: 0.5em;
+}
+input[id="postcode"]{
+    width: 45px;
+}
+input[id="mobile"]{
+    width: 85px;
+}
+input[id="foodtype"]{
+    width: 70px;
+}
+input[id="country"]{
+    width: 30em;
+}
+
 
 
  
@@ -172,14 +197,11 @@ input[type="submit"]{
     font-size: 10px;
     max-width: 100px;
     width:50%;
-    margin-top: 30px;
-    border-radius: 3px;
+    margin-top: 5px;
+    border-radius: 10px;
    
 }
-#flightype, .flighttype{
-    white-space:nowrap;
-    display:inline
-}
+
 #labeloneway{
     margin-left:0;
 }
@@ -216,6 +238,7 @@ h4{
 #foodchoice{
     font-size: 15px;
 }
+
 
 
 
