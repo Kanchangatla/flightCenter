@@ -78,11 +78,15 @@ function checkFormIsValid(form){
     {
         alert ( "Please select your Flighttype: Oneway or Roundtrip" ); 
         return false;
-    }
-    if (displayErr= "") { form.submit() } else {
+    }//radio buttons
+    
+   if (displayErr= "") { form.submit() } else {
         alert("Congratulations your booking is done and you will soon receive your booking details in your specified email!");
     }
-    } 
+    
+
+
+    } //end of form validation
 
 
 
