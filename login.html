@@ -34,7 +34,7 @@
 <!--Book now form-->
 <!--Radio buttons with One way or Return-->
 <div class="container">
-   <form class="form-group"  ID="form">
+   <form class="form-group"  ID="form"><!---form starts-->
     <!-- <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -71,9 +71,9 @@
        <section>
 <fieldset>
     <legend>Booking Details</legend>
-  <form name="comment" action="#" method=post><!---form starts-->
+  <form name="comment" action="#" method=post>
   <!-- <h3 id="flightype">Flight Type :</h3> -->
-  <span>Choose Flight Type:</span>
+  <h5>Choose Flight Type:</h5>
   <input type="radio" name="button" id="oneWay"
 value="oneWay" onclick="hideReturn(); flightDates()">One Way
 <input type="radio" name="button" id="return"
@@ -87,7 +87,7 @@ value="return" onclick="hideReturn(); flightDates()">Return<br>
   <small class="error"></small> -->
          <br /><br>
         
-        <span class="headfordestination">Destination :</span>
+        <h5 class="headfordestination">Destination :</h5>
 
         <label id="origin" for="origin" required>From:</label>
         <select id="orig" required>
@@ -130,7 +130,7 @@ value="return" onclick="hideReturn(); flightDates()">Return<br>
            <label for="flyto" id="flyto">To :</label><input type="text" id="flyto" name="flyto">
            <small class="error"></small> -->
            <br><br>
-           <span>Date Of Travel:</span>
+           <h5>Date Of Travel:</h5>
            <label id="deplb">Departure<input type="date" name="departure" value="departure" id="dep"  /></label>
            <label id="retlb">Return<input type="date" name="return"  value="return" id="ret" /></label>
            <!-- <label for="depart" id="depart">Departure</label> <input  type ="text" id="depart" name="depart" >

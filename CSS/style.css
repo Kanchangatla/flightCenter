@@ -17,12 +17,13 @@ html{
 
     }
     body {
-      background-image: url(../Images/pexels-c-cagnin-2007401.jpg);
-      background-size: cover;
-      --nav-height: 65px;
-      padding-top: var(--nav-height);
+        background-image: url(../Images/pexels-c-cagnin-2007401.jpg);
+          background-size:cover;
+        
+        --nav-height: 70px;
+        padding-top: var(--nav-height);
       
-        }
+      }
     .btn{
        margin-top: 1rem;
        display:inline-block;
@@ -133,6 +134,9 @@ html{
     right:0;
     margin-right: 30px;
 }
+
+
+
 fieldset{
     margin: 7em 0;
     
@@ -148,11 +152,6 @@ legend{
     padding: 0 .25em;
     color:rgb(12, 12, 54);
 }
-
-
-
-
-
 
 /* input and text area */
 
@@ -188,6 +187,7 @@ input[id="country"]{
 
  
 /* submit button */
+
 input[type="submit"]{
     padding: .5em 1em;
     border-radius:6px;
@@ -238,6 +238,22 @@ h4{
 #foodchoice{
     font-size: 15px;
 }
+label {
+    color:black;
+    
+    font-size: 1.8em;
+    
+}
+.form-group{
+    margin-top: 1em;
+}
+h5{
+    font-size: 1.8em;
+}
+
+
+
+    
 
 
 
