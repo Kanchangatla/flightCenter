@@ -52,6 +52,19 @@ html{
 
     }
     
+    .side-bar1{
+        float:left;
+        width:50%;
+        margin-top: 3rem;
+    
+    }
+    .side-bar2{
+        float: right;
+        width:50%;
+        margin-top: 3rem;
+        
+        
+    }
     
     .navbar a{
         font-size: 1.7rem;

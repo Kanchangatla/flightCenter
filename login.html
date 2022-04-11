@@ -73,6 +73,9 @@
     <legend>Booking Details</legend>
   <form name="comment" action="#" method=post>
   <!-- <h3 id="flightype">Flight Type :</h3> -->
+  
+  <div class="side-bar1">
+    
   <h5>Choose Flight Type:</h5>
   <input type="radio" name="button" id="oneWay"
 value="oneWay" onclick="hideReturn(); flightDates()">One Way
@@ -197,6 +200,9 @@ value="return" onclick="hideReturn(); flightDates()">Return<br>
    <option value="nonveg">Non-veg</option></small>
   
  </select>
+</div>                      <!--side-bar1--->
+ 
+<div class="side-bar2"><!---side-bar 2 starts-->
  <h4>Contact Details & Payment</h4>
  <label for ="email">E-mail</label> <input  type ="text" id="email" name="email" >
  <!-- <div id="error1" style="color:red; font-size:18px; font-weight:bold;"> -->
@@ -220,9 +226,7 @@ value="return" onclick="hideReturn(); flightDates()">Return<br>
     <div id="error2" style="color:red; font-size:18px; font-weight:bold;"></div>
 <br><br>
  
- 
- 
- <span>Select Payment Method: </span>
+ <h5> Select Payment Method: </h5>
  <select id="payment" name="payment">
   
    <option value="Bank-Transfer">Bank-transfer</option>
@@ -230,9 +234,9 @@ value="return" onclick="hideReturn(); flightDates()">Return<br>
    
    <input type="submit" id="submitBtn"   value="SUBMIT FORM">
       
-
 </form><!---form ends-->
  
+</div> <!--side-bar 2-->
 </fieldset>
 
 </section>
